@@ -1,4 +1,4 @@
-# Janpa ![janpa-logo](https://github.com/Bartekkur1/janpa/images/janpa-logo-small.png "Logo")
+![janpa-logo](https://github.com/Bartekkur1/janpa/blob/master/images/janpa-logo-small.png "Logo")
 
 ### Janpa is ultra lightweight PHP MVC framework. Created for my school project and because other PHP frameworks had lots of things that I didn’t used at all and some that I couldn't find usage for. Whole janpa framework have around 600 lines of code. Framework uses built-in library that contains routing and few super classes.
 
@@ -46,7 +46,7 @@ Public directory don't have htaccess so it can be accessed by everyone, our imag
 <hr>
 
 I created a schema that shows how this thing works.
-![schema](https://github.com/Bartekkur1/janpa/images/schema-small.png "Schema")
+![schema](https://github.com/Bartekkur1/janpa/blob/master/images/graph.png "Schema")
 
 ### Let's go through that schema with with code examples
 1. User uses some kind of interaction with server, user may send input like POST request or just type server link in browser. For example let's take a look at user that trying to access article at our blog page.
