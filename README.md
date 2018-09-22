@@ -8,6 +8,7 @@
   This version do not contain any frontend pages :( 
   1. Clone repository
   2. Setup your server and drop all files there
+  3. Change htaccess files name from htaccess.txt to .htaccess
   3. Update your config.ini file for database connection
   4. Delete example controllers & models (optional)
   5. Done, ready to go!
