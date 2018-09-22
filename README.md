@@ -1,21 +1,20 @@
 ![janpa-logo](https://github.com/Bartekkur1/janpa/blob/master/images/janpa-logo-small.png "Logo")
 
-### Janpa is ultra lightweight PHP MVC framework. Created for my school project and because other PHP frameworks had lots of things that I didn’t used at all and some that I couldn't find usage for. Whole janpa framework have around 600 lines of code. Framework uses built-in library that contains routing and few super classes.
+### Janpa is an ultra lightweight PHP MVC framework. Initially created for my school project I have decided to published it due to the fact that most of the frameworks contain a lot of redundant utilities that inevitably slow down your application. Whole janpa framework have around 600 lines of code. Framework uses built-in library that contains routing and few super classes.
 
 <hr>
 
-### Instaling
+### Installation
   This version do not contain any frontend pages :( 
-  1. Download repo
-  2. Setup your server (I uses xampp) and drop all files there
+  1. Clone repository
+  2. Setup your server and drop all files there
   3. Update your config.ini file for database connection
   4. Delete example controllers & models (optional)
   5. Done, ready to go!
 <hr>
 
-### Here's how directory looks like. Htaccess isolates app directory from unwanted access. 
-In app directory lies everything, models, controllers and the most important config.ini file where database password is stored.
-Public directory don't have htaccess so it can be accessed by everyone, our images and stylesheet. Index in main directory is our routing page, we will write all paths there.
+### Here's how the directory looks like. Htaccess isolates app directory from unwanted access. 
+The application directory contains everything, models, controllers and the most important config.ini file where database password is stored. Public directory is a storage for our images and stylesheet and it doesn't have htaccess making it accessible for everyone. Index in main directory is our routing page we will be writing all paths there.
 
 * app
   * controllers
@@ -68,7 +67,7 @@ echo "<h1>Page not found</h1>";
 ```
 In this example route "/new_post" is secured by third argument (true) given in maping function (by default its set to false)
 
-4. Login is ingrained deep intro rouing. It means that if you want to make some kind of login system on your webpage you have to use session["user"] to make it through router security without permision deined or edit router.
+4. Login is ingrained deep into routing. It means that if you want to make some kind of login system on your webpage you have to use session["user"] to make it through router security without permision denied or editing router code.
 ```php
 if($route->secure) {
   if(!isset($_SESSION["user"])) {
@@ -96,7 +95,7 @@ call_user_func_array(array($controller, $route->function_name), $method_params);
 die;
 ```
 
-In php you can create class instance just of a its name given by string.
+In php you can create class instance just of its name given by string.
 
 6. Using class function given in index. 
 ```php
@@ -149,10 +148,10 @@ class Model
 }
 ```
 
-Every model inherits from "mother model" class database connection so its not establishing connection for every model.
+Every model inherits from "mother model" class database connection so it's not establishing connection for every model.
 
 **Query builder itself is big, 200 lines of functions we can use to interact with database.
-Even that I created it myself sometimes I have to look there for a function that im not sure is there or I don’t exactly remember how it works. Im not going to make a querybuilder documentation, I don’t have time and patient…**
+Even though I created it myself sometimes I have to look there for a function that I'm not sure is there or I don’t remember how it works. I'm not going to make a querybuilder documentation, I don’t have time and patience…**
 
 ##### Model examples : 
 
